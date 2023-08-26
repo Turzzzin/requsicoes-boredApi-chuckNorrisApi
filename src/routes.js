@@ -1,13 +1,16 @@
 const express = require('express');
 const router = express.Router();
 const axios = require('axios');
+require('dotenv').config();
+
+const cn_url = process.env.api_cn_url;
 
 router.get('/', (req, res) => {
     res.status(200).send('Essa é o app do grupo 5');
 });
 
 router.get('/cn-jokes', async (req, res) => {
-    axios.get('https://api.chucknorris.io/jokes/random')
+    axios.get(cn_url)
         .then((response) => {
             const apiData = response.data;
             const responseApi = {
