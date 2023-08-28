@@ -1,19 +1,20 @@
 const axios = require('axios');
 require('dotenv').config();
-const { guidGenerator } = require('../utils/utils.js');
+const { guidGenerator, formatDate, replaceChuckNorris } = require('../utils/utils.js');
 
 const cn_url = process.env.api_cn_url;
 const bored_url = process.env.api_bored_url;
+
 
 async function ChuckNorrisJokesData() {
     const response = await axios.get(cn_url);
     const jokesResponse = response.data;
     let formatedJokesResponse = {
-        data_atualizacao: jokesResponse.updated_at,
-        data_criacao: jokesResponse.created_at,
+        data_atualizacao: formatDate(jokesResponse.updated_at),
+        data_criacao: formatDate(jokesResponse.created_at),
         icone: jokesResponse.icon_url,
         id: jokesResponse.id,
-        piada: jokesResponse.value,
+        piada: replaceChuckNorris(jokesResponse.value),
         referencia: jokesResponse.url,
     };
     return formatedJokesResponse;
