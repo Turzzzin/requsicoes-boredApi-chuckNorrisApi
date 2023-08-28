@@ -3,7 +3,7 @@ const router = express.Router();
 const { ChuckNorrisJokesData, BoredApiActivitiesData } = require('../controllers/controllers.js');
 
 router.get('/', (req, res) => {
-    res.status(200).send('Essa é o app do grupo 5');
+    res.status(200).send('Esse é o app do grupo 5');
 });
 
 router.get('/api/piadas', async (req, res) => {

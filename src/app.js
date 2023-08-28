@@ -5,6 +5,8 @@ require('dotenv').config();
 
 const PORT = process.env.port_local;
 
+app.use(express.static('public'));
+
 app.use(express.json());
 
 app.use('/', routes);
