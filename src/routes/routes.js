@@ -1,36 +1,21 @@
 const express = require('express');
 const router = express.Router();
-const axios = require('axios');
-require('dotenv').config();
-
-const cn_url = process.env.api_cn_url;
+const { ChuckNorrisJokesData, BoredApiActivitiesData } = require('../controllers/controllers.js');
 
 router.get('/', (req, res) => {
     res.status(200).send('Essa é o app do grupo 5');
 });
 
 router.get('/api/piadas', async (req, res) => {
-    axios.get('https://api.chucknorris.io/jokes/random')
-        .then((response) => {
-            const apiData = response.data;
-            const responseApi = {
-                data_atualizacao: apiData.updated_at,
-                data_criacao: apiData.created_at,
-                icone:apiData.icon_url,
-                id:apiData.id,
-                piada:apiData.value,
-                referencia:apiData.url,
-            };
-            res.json(responseApi);
-        });
+    let jokesResponse = await ChuckNorrisJokesData();
+    console.log(jokesResponse);
+    res.status(200).send(jokesResponse);
 });
 
 router.get('/api/atividades', async (req, res) => {
-    axios.get('https://www.boredapi.com/api/activity')
-        .then((response) => {
-            const boredData = response.data;
-            res.json(boredData);
-    })
+    let activityResponse = await BoredApiActivitiesData();
+    console.log(activityResponse);
+    res.status(200).send(activityResponse);
 });
 
 module.exports = router;
