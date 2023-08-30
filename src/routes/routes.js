@@ -6,7 +6,7 @@ const { AppStrings } = require('../utils/constants/appStrings.js');
 const { AppNumbers } = require('../utils/constants/appNumbers.js');
 
 router.get(AppStrings.messagePath, (req, res) => {
-    res.status(AppNumbers.statusCodeSucess).send('Esse é o app do grupo 5');
+    res.status(AppNumbers.statusCodeSucess).send('Sucesso na inicialização da aplicação!');
 });
 
 router.get(AppStrings.jokesPath, async (req, res) => {
