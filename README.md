@@ -37,6 +37,9 @@ A ideia do programa é exibir para o usuário o retorno dos dados das APIs:
 
 ```
 ***
+## Ferramentas necessárias:
+`Node.js`
+***
 ## Funcionamento do programa:
 Os pacotes de dependências estão especificados dentro do arquivo `package.json`.
 - Para conseguir rodar o programa é necessário baixar as dependências, rodando o seguinte comando no temrinal (dentro do diretório dos arquivos)
