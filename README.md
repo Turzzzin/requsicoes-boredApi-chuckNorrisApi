@@ -1,5 +1,5 @@
-# Requsição às APIs ChuckNorris (Jokes) e Bored (Activities)
-Esse é um projeto de estudo, em Node.js, feito para melhorar minha familiaridade com APIs nessa linguagem.
+# Explorando APIs ChuckNorris e Bored: Um Projeto de Estudo em Node.js
+Neste repositório, apresento um projeto dedicado ao aprimoramento das minhas habilidades em desenvolvimento com Node.js, focando especialmente na interação com APIs. O objetivo principal é adquirir uma maior familiaridade com a linguagem e suas capacidades de integração.
 ***
 ## O que o programa faz?
 A ideia do programa é exibir para o usuário o retorno dos dados das APIs:
@@ -7,8 +7,8 @@ A ideia do programa é exibir para o usuário o retorno dos dados das APIs:
   - https://api.chucknorris.io/
 - O programa possui 3 rotas de funcionamento
   - `/` - retorna "x"
-  - `/api/atividades` - retorna os dados da api https://www.boredapi.com/atividades
-  - `/api/piadas` - retorna os dados da api https://api.chucknorris.io/jokes/random
+  - `/api/atividades` - retorna os dados da requisição à api https://www.boredapi.com/atividades
+  - `/api/piadas` - retorna os dados da requisição à api https://api.chucknorris.io/jokes/random
 ***
 ## Como o programa está estruturado
 
