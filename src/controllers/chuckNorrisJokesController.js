@@ -1,12 +1,11 @@
 const axios = require('axios');
-require('dotenv').config();
 const { formatDate } = require('../utils/formatDate.js');
 const { replaceChuckNorris } = require('../utils/replaceChuckNorris.js');
+const { AppStrings } = require('../utils/constants/appStrings.js');
 
-const cn_url = process.env.api_cn_url;
 
 async function ChuckNorrisJokesData() {
-    const response = await axios.get(cn_url);
+    const response = await axios.get(AppStrings.api_cn_url);
     const jokesResponse = response.data;
     let formatedJokesResponse = {
         data_atualizacao: formatDate(jokesResponse.updated_at),
