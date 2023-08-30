@@ -3,12 +3,12 @@ Esse é um projeto de estudo, em Node.js, feito para melhorar minha familiaridad
 ***
 ## O que o programa faz?
 A ideia do programa é exibir para o usuário o retorno dos dados das APIs:
-- https://www.boredapi.com/
-- https://api.chucknorris.io/
-O programa possui 3 rotas de funcionamento
-`/` - retorna "x"
-`/api/atividades` - retorna os dados da api https://www.boredapi.com/atividades
-`/api/piadas` - retorna os dados da api https://api.chucknorris.io/jokes/random
+  - https://www.boredapi.com/
+  - https://api.chucknorris.io/
+- O programa possui 3 rotas de funcionamento
+  - `/` - retorna "x"
+  - `/api/atividades` - retorna os dados da api https://www.boredapi.com/atividades
+  - `/api/piadas` - retorna os dados da api https://api.chucknorris.io/jokes/random
 ***
 ## Como o programa está estruturado
 
