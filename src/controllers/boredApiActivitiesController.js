@@ -1,6 +1,6 @@
 const axios = require('axios');
 require('dotenv').config();
-const { guidGenerator } = require('../utils/utils.js');
+const { guidGenerator } = require('../utils/guidGenerator.js');
 
 const bored_url = process.env.api_bored_url;
 

@@ -1,6 +1,7 @@
 const axios = require('axios');
 require('dotenv').config();
-const { formatDate, replaceChuckNorris } = require('../utils/utils.js');
+const { formatDate } = require('../utils/formatDate.js');
+const { replaceChuckNorris } = require('../utils/replaceChuckNorris.js');
 
 const cn_url = process.env.api_cn_url;
 
