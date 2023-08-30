@@ -1,6 +1,6 @@
 const axios = require('axios');
-const { formatDate } = require('../utils/formatDate.js');
-const { replaceChuckNorris } = require('../utils/replaceChuckNorris.js');
+const { formatDate } = require('../utils/functions/formatDate.js');
+const { replaceChuckNorris } = require('../utils/functions/replaceChuckNorris.js');
 const { AppStrings } = require('../utils/constants/appStrings.js');
 
 

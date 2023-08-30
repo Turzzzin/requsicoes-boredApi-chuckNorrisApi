@@ -1,5 +1,5 @@
 const axios = require('axios');
-const { guidGenerator } = require('../utils/guidGenerator.js');
+const { guidGenerator } = require('../utils/functions/guidGenerator.js');
 const { AppStrings } = require('../utils/constants/appStrings.js');
 
 async function BoredApiActivitiesData() {
