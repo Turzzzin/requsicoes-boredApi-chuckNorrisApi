@@ -7,7 +7,7 @@ A ideia do programa é exibir para o usuário o retorno dos dados das APIs:
   - https://api.chucknorris.io/
 ***
 ## Rotas do projeto
-  - `/` - retorna "x"
+  - `/` - retorna uma mensagem genérica de sucesso.
   - `/api/atividades` - retorna os dados da requisição à api https://www.boredapi.com/atividades
   - `/api/piadas` - retorna os dados da requisição à api https://api.chucknorris.io/jokes/random
 ***
