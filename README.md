@@ -12,6 +12,9 @@ Esse é um projeto de estudo, em Node.js, feito para melhorar minha familiaridad
 │   ├─ routes/
 │   │   └── routes.js
 │   ├─ utils/
+│   │   ├─ constants/
+│   │   │   └── appNumbers.js
+│   │   │   └── appStrings.js
 │   │   └── formatDate.js
 │   │   └── guidGenerator.js
 │   │   └── replaceChuckNorris.js
