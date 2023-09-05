@@ -25,9 +25,10 @@ A ideia do programa é exibir para o usuário o retorno dos dados das APIs:
 │   │   ├─ constants/
 │   │   │   └── appNumbers.js
 │   │   │   └── appStrings.js
-│   │   └── formatDate.js
-│   │   └── guidGenerator.js
-│   │   └── replaceChuckNorris.js
+|   |   ├─ constants/
+│   │   │  └── formatDate.js
+│   │   │  └── guidGenerator.js
+│   │   │  └── replaceChuckNorris.js
 │   └── app.js
 ├─ .eslintrc.json
 ├─ .gitignore
